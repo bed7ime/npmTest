@@ -6,6 +6,18 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+  "collectCoverage":true,
+  "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
